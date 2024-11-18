@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('components/head.html', { "title":"Главная" })
+    <body>
+        @@include('components/header/header.html', {})
+        <main class="wrapper">
+            <section class="top">
+                <div class="top__anim">
+                    <div class="top__anim-img">
+                        <svg class="icon" viewBox="0 -460 1440 460">
+                            <g class="layer">
+                                <path d="M0 0H0L0-80V-80Q720-840 1440-80V0Q720-760 0 0" fill="currentColor" id="svg_1" />
+                                <circle offset-distance="50%" filter="url(#shadow)" style="animation-delay: 0ms" class="circle" cx="0" cy="0" fill="currentColor" id="svg_2" r="10" transform="matrix(1 0 0 1 0 0)" />
+                                <circle filter="url(#shadow)" style="animation-delay: 000ms" class="circle" cx="0" cy="0" fill="currentColor" id="svg_3" r="10" />
+                                <circle filter="url(#shadow)" style="animation-delay: 10000ms" class="circle" cx="0" cy="0" fill="currentColor" id="svg_3" r="10" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="top__map">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#map"></use>
+                    </svg>
+                </div>
+                <div class="top__block">
+                    <h1 class="top__title">Узнать больше о мобильной сети t2</h1>
+                    <p class="top__text">И проверьте покрытие в своём городе</p>
+                    <button class="top__btn">Узнать</button>
+                </div>
+            </section>
+        </main>
+        @@include('components/footer/footer.html', {})
+    </body>
+</html>
